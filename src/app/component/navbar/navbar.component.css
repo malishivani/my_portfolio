@@ -1,0 +1,39 @@
+.custom-nav {
+    background-color: aquamarine;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 5px 25px rgb(16, 15, 15);
+    padding: 2px 0;
+    /* transition: .3s; */
+    height: 50px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-item {
+    margin-left: 20px;
+    font-weight: 500;
+    /* position: relative; */
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transform: scale(1.2);
+}
